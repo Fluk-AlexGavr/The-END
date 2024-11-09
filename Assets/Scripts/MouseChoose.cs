@@ -20,6 +20,7 @@ public class MouseChoose : MonoBehaviour
     {
         Player = GameObject.FindWithTag("Player").transform;
         ChangeWeaponScript = Player.GetComponent<ChangeWeapon>();
+        image.color = ImageColorNotActive;
     }
 
     private void OnMouseEnter()
