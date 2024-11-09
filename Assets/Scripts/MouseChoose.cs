@@ -16,20 +16,30 @@ public class MouseChoose : MonoBehaviour
     [SerializeField] Color ImageColorNotActive;
     [SerializeField] Image image;
 
+
+
     private void Start()
     {
         Player = GameObject.FindWithTag("Player").transform;
         ChangeWeaponScript = Player.GetComponent<ChangeWeapon>();
         image.color = ImageColorNotActive;
+        material.SetFloat("_Outline_Range", 0.05f);
     }
 
     private void OnMouseEnter()
     {
         material.SetFloat("_Outline_Range", 1.05f);
         light.intensity = intensityChoosen;
+    }
+    private void OnMouseOver()
+    {
         if ((Player.position - transform.position).magnitude < distanceGrab)
         {
             image.color = ImageColorActive;
+        }
+        else
+        {
+            image.color = ImageColorNotActive;
         }
     }
     private void OnMouseExit()
@@ -43,10 +53,9 @@ public class MouseChoose : MonoBehaviour
     {
         if ((Player.position - transform.position).magnitude < distanceGrab)
         {
-            Destroy(gameObject);
-            material.SetFloat("_Outline_Range", 1.05f);
             image.color = ImageColorNotActive;
             SetWeapon();
+            Destroy(gameObject);
         }
     }
 
@@ -54,5 +63,10 @@ public class MouseChoose : MonoBehaviour
     {
         print(gameObject.tag);
         ChangeWeaponScript.weaponName = gameObject.tag;
+    }
+
+    private void OnDestroy()
+    {
+        image.color = ImageColorNotActive;
     }
 }
