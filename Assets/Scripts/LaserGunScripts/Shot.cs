@@ -9,8 +9,10 @@ public class Shot : MonoBehaviour
     [SerializeField] float maxDistance = 100f;  // Максимальная длина луча
     [SerializeField] GameObject laser;
     [SerializeField] float offset = 5f;
-
     [SerializeField] float shotTime;
+    [SerializeField] float explosionDelay;
+    [SerializeField] ParticleSystem explosion;
+
 
     private bool alreadyShoting;
 
@@ -76,11 +78,17 @@ public class Shot : MonoBehaviour
         // Обновляем позицию и масштаб stretchingObject, чтобы он растягивался
         laser.transform.position = startPoint + direction * (distance / 2);  // Ставим в середину между точками
         laser.transform.localScale = new Vector3(laser.transform.localScale.x, distance / 6, laser.transform.localScale.z);
+        Invoke("SetExplosion", explosionDelay);
         Invoke("ShotEnd", shotTime);
+
     }
 
     void ShotEnd()
     {
         laser.SetActive(false);
+    }
+    void SetExplosion()
+    {
+        explosion.Play();
     }
 }
