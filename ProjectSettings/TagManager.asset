@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - isActive
+  - Crowbar
+  - Hummer
+  - GrabPoint
+  - target
   layers:
   - Default
   - TransparentFX
