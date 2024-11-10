@@ -1382,7 +1382,6 @@ GameObject:
   - component: {fileID: 1576037806}
   - component: {fileID: 1576037805}
   - component: {fileID: 1576037811}
-  - component: {fileID: 1576037812}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1524,33 +1523,6 @@ MonoBehaviour:
   - {fileID: 614329792}
   - {fileID: 1297998949}
   weaponName: 
---- !u!114 &1576037812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576037799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0450305cfbf5d0a4984cda908ef7f74f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayDistance: 3
-  targetTags:
-  - Crowbar
-  - Hummer
-  image: {fileID: 1811549297}
-  ImageColorActive:
-    r: 1
-    g: 0
-    b: 0
-    a: 1
-  ImageColorNotActive:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
 --- !u!1 &1590028070
 GameObject:
   m_ObjectHideFlags: 0
