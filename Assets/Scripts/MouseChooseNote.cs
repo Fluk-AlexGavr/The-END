@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MouseChooseNote : MonoBehaviour
 {
@@ -18,8 +19,8 @@ public class MouseChooseNote : MonoBehaviour
 
     [SerializeField] string noteText;
     [SerializeField] GameObject noteUI;
-    [SerializeField] Text textUI;
-
+    [SerializeField] TMP_Text textUI;
+    [SerializeField] PopUpSystem popUpSystem;
 
 
     private void Start()
@@ -64,7 +65,9 @@ public class MouseChooseNote : MonoBehaviour
 
     private void OpenNote()
     {
+        
         noteUI.SetActive(true);
         textUI.text = noteText;
+        popUpSystem.PopUp();
     }
 }
