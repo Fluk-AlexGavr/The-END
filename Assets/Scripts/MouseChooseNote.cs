@@ -20,7 +20,27 @@ public class MouseChooseNote : MonoBehaviour
     [SerializeField] string noteText;
     [SerializeField] GameObject noteUI;
     [SerializeField] TMP_Text textUI;
-    [SerializeField] PopUpSystem popUpSystem;
+    public Animator animator;
+
+    public void PopUp()
+    {
+        animator.SetBool("pop", true);
+    }
+
+    private void Update()
+    {
+        if (animator.GetBool("pop") == true)
+        {
+            if (Input.GetKey(KeyCode.Q))
+            {
+                PopDown();
+            }
+        }
+    }
+    public void PopDown()
+    {
+        animator.SetBool("pop", false);
+    }
 
 
     private void Start()
@@ -68,6 +88,6 @@ public class MouseChooseNote : MonoBehaviour
         
         noteUI.SetActive(true);
         textUI.text = noteText;
-        popUpSystem.PopUp();
+        PopUp();
     }
 }
