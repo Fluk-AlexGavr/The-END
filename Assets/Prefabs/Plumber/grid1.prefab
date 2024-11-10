@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2186264206557524690}
   - component: {fileID: 1683894202424527632}
+  - component: {fileID: 8742238923759321374}
   m_Layer: 5
   m_Name: grid1
   m_TagString: Untagged
@@ -124,6 +125,22 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &8742238923759321374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206113021431941281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c489fe3b07f7bda4d8edcc87702a7787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SizeX: 8
+  SizeY: 8
+  childObj: []
+  parent: {fileID: 8206113021431941281}
 --- !u!1001 &77990086556951830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -216,7 +233,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -318,7 +336,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -420,7 +439,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -624,7 +644,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -726,7 +747,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -828,7 +850,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -930,7 +953,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1032,7 +1056,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5339160412643866978, guid: a51e7d97abbb5b54fa6e2978004a6771, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1236,7 +1261,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1338,7 +1364,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5339160412643866978, guid: a51e7d97abbb5b54fa6e2978004a6771, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1440,7 +1467,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1542,7 +1570,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1644,7 +1673,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1746,7 +1776,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1848,7 +1879,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1950,7 +1982,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2154,7 +2187,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2358,7 +2392,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2562,7 +2597,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5339160412643866978, guid: a51e7d97abbb5b54fa6e2978004a6771, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2664,7 +2700,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2868,7 +2905,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2970,7 +3008,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3174,7 +3213,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3276,7 +3316,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5339160412643866978, guid: a51e7d97abbb5b54fa6e2978004a6771, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3378,7 +3419,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3480,7 +3522,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3582,7 +3625,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3684,7 +3728,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3786,7 +3831,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3888,7 +3934,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3990,7 +4037,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4092,7 +4140,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4194,7 +4243,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4296,7 +4346,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4398,7 +4449,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4500,7 +4552,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3348120570078997393, guid: 6d87dd53d73b10143b4575c62c5e1237, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4602,7 +4655,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4704,7 +4758,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5339160412643866978, guid: a51e7d97abbb5b54fa6e2978004a6771, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4806,7 +4861,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4908,7 +4964,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5010,7 +5067,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5112,7 +5170,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5339160412643866978, guid: a51e7d97abbb5b54fa6e2978004a6771, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5214,7 +5273,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5316,7 +5376,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5418,7 +5479,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5520,7 +5582,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5622,7 +5685,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5724,7 +5788,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5826,7 +5891,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5928,7 +5994,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6030,7 +6097,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6132,7 +6200,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6234,7 +6303,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wire (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5007607854187734843, guid: 5cb1887898c69c043a1823f4763bc798, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6336,7 +6406,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireT (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083360539957647500, guid: e1e98f7bc590e0741a6329763d623878, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6438,7 +6509,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5339160412643866978, guid: a51e7d97abbb5b54fa6e2978004a6771, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6540,7 +6612,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireL (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5162760267300641791, guid: 3210fabe8169b324db1388ca972d7ad9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
