@@ -16,7 +16,7 @@ public class MouseChooseNote : MonoBehaviour
     [SerializeField] Color ImageColorActive;
     [SerializeField] Color ImageColorNotActive;
     [SerializeField] Image image;
-
+    [SerializeField] AudioSource audioSource;
     [SerializeField] string noteText;
     [SerializeField] GameObject noteUI;
     [SerializeField] TMP_Text textUI;
@@ -85,7 +85,7 @@ public class MouseChooseNote : MonoBehaviour
 
     private void OpenNote()
     {
-        
+        audioSource.Play();
         noteUI.SetActive(true);
         textUI.text = noteText;
         PopUp();
