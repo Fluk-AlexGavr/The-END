@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MouseChooseBrokeItem : MonoBehaviour
+public class MouseChooseStoneOrMetalItem : MonoBehaviour
 {
     Transform Player;
     [SerializeField] float distanceGrab; 
@@ -26,7 +26,7 @@ public class MouseChooseBrokeItem : MonoBehaviour
     private void Start()
     {
         Player = GameObject.FindWithTag("Player").transform;
-        StickWallController = GameObject.FindWithTag("StickWallController");
+        StickWallController = GameObject.FindWithTag("StoneMetalController");
         image = StickWallController.GetComponent<StickWallControllerScript>().Cursor;
         image.color = ImageColorNotActive;
         

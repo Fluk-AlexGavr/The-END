@@ -14,6 +14,8 @@ public class Shot : MonoBehaviour
     [SerializeField] ParticleSystem explosion;
     [SerializeField] AudioSource AudioSource;
 
+    public bool buttonClick;
+
     private bool alreadyShoting;
 
 
@@ -41,7 +43,7 @@ public class Shot : MonoBehaviour
                     float angle = Vector3.Angle(direction, targetDirection);
 
                     // ѕровер€ем, попадает ли угол в допустимую погрешность offset
-                    if (angle <= offset)
+                    if (angle <= offset && buttonClick)
                     {
                         //«апускаем звук лазера
                         AudioSource.Play();
