@@ -4979,14 +4979,9 @@ MonoBehaviour:
   distanceGrab: 3
   ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
-  image: {fileID: 0}
   brokeEffect: {fileID: 27079423173736053}
   effectDelay: 3
   destroyDelay: 4
-  distuctiveObjs:
-  - {fileID: 0}
-  - {fileID: 0}
-  countConnects: 1
   brokeNow: 0
 --- !u!54 &1888369322329373645
 Rigidbody:
@@ -9994,14 +9989,9 @@ MonoBehaviour:
   distanceGrab: 3
   ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
-  image: {fileID: 0}
   brokeEffect: {fileID: 8706694692235952011}
   effectDelay: 3
   destroyDelay: 4
-  distuctiveObjs:
-  - {fileID: 0}
-  - {fileID: 0}
-  countConnects: 1
   brokeNow: 0
 --- !u!54 &4216825796891723750
 Rigidbody:
@@ -10057,7 +10047,7 @@ Transform:
   m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 0.6610901, y: 0.23021823, z: -17.317312}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 650103689459887444}
   - {fileID: 1786264507277998926}
@@ -15044,14 +15034,9 @@ MonoBehaviour:
   distanceGrab: 3
   ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
-  image: {fileID: 0}
   brokeEffect: {fileID: 5300431746020609098}
   effectDelay: 3
   destroyDelay: 4
-  distuctiveObjs:
-  - {fileID: 0}
-  - {fileID: 0}
-  countConnects: 1
   brokeNow: 0
 --- !u!54 &3620639440537506471
 Rigidbody:
@@ -20059,14 +20044,9 @@ MonoBehaviour:
   distanceGrab: 3
   ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
-  image: {fileID: 0}
   brokeEffect: {fileID: 795533650499141527}
   effectDelay: 3
   destroyDelay: 4
-  distuctiveObjs:
-  - {fileID: 0}
-  - {fileID: 0}
-  countConnects: 1
   brokeNow: 0
 --- !u!54 &3243013955325879667
 Rigidbody:
