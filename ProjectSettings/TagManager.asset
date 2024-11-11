@@ -13,6 +13,7 @@ TagManager:
   - GrabPoint
   - Note
   - StickWallController
+  - StoneMetalController
   layers:
   - Default
   - TransparentFX

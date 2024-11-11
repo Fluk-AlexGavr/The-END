@@ -4977,7 +4977,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceGrab: 3
-  ImageColorActive: {r: 1, g: 0.17034112, b: 0, a: 1}
+  ImageColorActive: {r: 1, g: 0.821591, b: 0, a: 1}
+  ImageColorActiveButNotUsed: {r: 1, g: 0.17034112, b: 0, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
   brokeEffect: {fileID: 27079423173736053}
   effectDelay: 3
@@ -9988,7 +9989,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceGrab: 3
-  ImageColorActive: {r: 1, g: 0.17034112, b: 0, a: 1}
+  ImageColorActive: {r: 1, g: 0.821591, b: 0, a: 1}
+  ImageColorActiveButNotUsed: {r: 1, g: 0.17034112, b: 0, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
   brokeEffect: {fileID: 8706694692235952011}
   effectDelay: 3
@@ -15034,7 +15036,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceGrab: 3
-  ImageColorActive: {r: 1, g: 0.17034112, b: 0, a: 1}
+  ImageColorActive: {r: 1, g: 0.821591, b: 0, a: 1}
+  ImageColorActiveButNotUsed: {r: 1, g: 0.17034112, b: 0, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
   brokeEffect: {fileID: 5300431746020609098}
   effectDelay: 3
@@ -20045,7 +20048,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceGrab: 3
-  ImageColorActive: {r: 1, g: 0.17034112, b: 0, a: 1}
+  ImageColorActive: {r: 1, g: 0.821591, b: 0, a: 1}
+  ImageColorActiveButNotUsed: {r: 1, g: 0.17034112, b: 0, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
   brokeEffect: {fileID: 795533650499141527}
   effectDelay: 3
