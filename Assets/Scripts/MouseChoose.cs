@@ -54,16 +54,18 @@ public class MouseChoose : MonoBehaviour
     {
         if ((Player.position - transform.position).magnitude < distanceGrab)
         {
-            audioSource.Play();
+            
             image.color = ImageColorNotActive;
             SetWeapon();
             Destroy(gameObject);
+            
         }
     }
 
     private void SetWeapon()
     {
         print(gameObject.tag);
+        audioSource.Play();
         ChangeWeaponScript.weaponName = gameObject.tag;
     }
 
