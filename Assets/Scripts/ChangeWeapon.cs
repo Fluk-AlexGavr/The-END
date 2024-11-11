@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChangeWeapon : MonoBehaviour
 {
-    [SerializeField] List<GameObject> weapons = new List<GameObject>();
+    public List<GameObject> weapons = new List<GameObject>();
     string lastWeaponName;
     public string weaponName;
     private void Start()

@@ -49,7 +49,7 @@ public class MouseChoose : MonoBehaviour
         image.color = ImageColorNotActive;
     }
 
-    private void OnMouseDown()
+    private void OnMouseUp()
     {
         if ((Player.position - transform.position).magnitude < distanceGrab)
         {
