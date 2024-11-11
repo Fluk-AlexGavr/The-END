@@ -12,7 +12,7 @@ public class Shot : MonoBehaviour
     [SerializeField] float shotTime;
     [SerializeField] float explosionDelay;
     [SerializeField] ParticleSystem explosion;
-
+    [SerializeField] AudioSource AudioSource;
 
     private bool alreadyShoting;
 
@@ -36,12 +36,15 @@ public class Shot : MonoBehaviour
             {
                 if (hit.collider.tag =="target")
                 {
+
                     Vector3 targetDirection = (hit.collider.transform.position - transform.position).normalized;
                     float angle = Vector3.Angle(direction, targetDirection);
 
                     // Проверяем, попадает ли угол в допустимую погрешность offset
                     if (angle <= offset)
                     {
+                        //Запускаем звук лазера
+                        AudioSource.Play();
                         Shot1();  // Вызываем Shot и передаем конечную точку луча
                         alreadyShoting = true;
                     }
