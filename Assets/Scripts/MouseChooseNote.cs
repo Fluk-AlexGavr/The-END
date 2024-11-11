@@ -21,7 +21,6 @@ public class MouseChooseNote : MonoBehaviour
     [SerializeField] GameObject noteUI;
     [SerializeField] TMP_Text textUI;
     public Animator animator;
-
     public void PopUp()
     {
         animator.SetBool("pop", true);
@@ -79,7 +78,11 @@ public class MouseChooseNote : MonoBehaviour
         if ((Player.position - transform.position).magnitude < distanceGrab)
         {
             image.color = ImageColorNotActive;
+            if (!noteUI.activeInHierarchy) 
+            {
             OpenNote();
+            }
+            
         }
     }
 
