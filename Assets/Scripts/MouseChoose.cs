@@ -15,6 +15,7 @@ public class MouseChoose : MonoBehaviour
     [SerializeField] Color ImageColorActive;
     [SerializeField] Color ImageColorNotActive;
     [SerializeField] Image image;
+    [SerializeField] AudioSource audioSource;
 
 
 
@@ -53,6 +54,7 @@ public class MouseChoose : MonoBehaviour
     {
         if ((Player.position - transform.position).magnitude < distanceGrab)
         {
+            audioSource.Play();
             image.color = ImageColorNotActive;
             SetWeapon();
             Destroy(gameObject);
