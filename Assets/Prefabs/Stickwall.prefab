@@ -4977,12 +4977,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceGrab: 3
-  ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
+  ImageColorActive: {r: 1, g: 0.17034112, b: 0, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
   brokeEffect: {fileID: 27079423173736053}
   effectDelay: 3
   destroyDelay: 4
   brokeNow: 0
+  needToBrokeFromCollider: 1
 --- !u!54 &1888369322329373645
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9987,12 +9988,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceGrab: 3
-  ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
+  ImageColorActive: {r: 1, g: 0.17034112, b: 0, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
   brokeEffect: {fileID: 8706694692235952011}
   effectDelay: 3
   destroyDelay: 4
   brokeNow: 0
+  needToBrokeFromCollider: 1
 --- !u!54 &4216825796891723750
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15032,12 +15034,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceGrab: 3
-  ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
+  ImageColorActive: {r: 1, g: 0.17034112, b: 0, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
   brokeEffect: {fileID: 5300431746020609098}
   effectDelay: 3
   destroyDelay: 4
   brokeNow: 0
+  needToBrokeFromCollider: 1
 --- !u!54 &3620639440537506471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20042,12 +20045,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceGrab: 3
-  ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
+  ImageColorActive: {r: 1, g: 0.17034112, b: 0, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
   brokeEffect: {fileID: 795533650499141527}
   effectDelay: 3
   destroyDelay: 4
   brokeNow: 0
+  needToBrokeFromCollider: 1
 --- !u!54 &3243013955325879667
 Rigidbody:
   m_ObjectHideFlags: 0
