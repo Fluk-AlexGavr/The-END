@@ -18,6 +18,7 @@ public class MouseChooseBrokeItem : MonoBehaviour
     List<GameObject> distuctiveObjs = new List<GameObject>();
     int countConnects;
     [SerializeField] bool brokeNow;
+    [SerializeField] bool needToBrokeFromCollider;
     GameObject StickWallController;
 
 
@@ -36,7 +37,7 @@ public class MouseChooseBrokeItem : MonoBehaviour
 
     private void Update()
     {
-        if(countConnects <=0 && !brokeNow)
+        if(countConnects <=0 && !brokeNow && needToBrokeFromCollider)
         {
             Broke();
         }
@@ -84,7 +85,9 @@ public class MouseChooseBrokeItem : MonoBehaviour
     {
         gameObject.GetComponent<MeshRenderer>().enabled = false;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        gameObject.GetComponent<Collider>().enabled = false;
+        Collider[] colliders = gameObject.GetComponents<Collider>();
+        foreach (Collider collider in colliders)
+        { collider.enabled = false; }
         brokeEffect.Play();
     }
 
