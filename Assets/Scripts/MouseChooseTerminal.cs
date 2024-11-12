@@ -14,6 +14,7 @@ public class MouseChooseTerminal : MonoBehaviour
     [SerializeField] float distanceGrab; 
     ChangeWeapon ChangeWeaponScript;
     [SerializeField] Color ImageColorActive;
+    [SerializeField] Color ImageColorActiveButNotActive;
     [SerializeField] Color ImageColorNotActive;
     [SerializeField] Image image;
     [SerializeField] AudioSource audioSource;
@@ -22,6 +23,8 @@ public class MouseChooseTerminal : MonoBehaviour
     [SerializeField] float terminalDistance;
     public bool isOpen=false;
     public TerminalProvider terminalProvider;
+    public bool canActivate;
+    public TerminalProvider otherTerminal;
     public void PopUp()
     {
         animator.SetTrigger("Pop");
@@ -32,6 +35,11 @@ public class MouseChooseTerminal : MonoBehaviour
         if ((Player.position - transform.position).magnitude >= terminalDistance)
                 {
                     noteUI.SetActive(false);
+        }
+
+        if(!canActivate)
+        {
+            canActivate = otherTerminal.isWin;
         }
 
     }
@@ -51,9 +59,13 @@ public class MouseChooseTerminal : MonoBehaviour
     }
     private void OnMouseOver()
     {
-        if ((Player.position - transform.position).magnitude < distanceGrab)
+        if ((Player.position - transform.position).magnitude < distanceGrab && canActivate)
         {
             image.color = ImageColorActive;
+        }
+        else if((Player.position - transform.position).magnitude < distanceGrab)
+        {
+            image.color = ImageColorActiveButNotActive;
         }
         else
         {
@@ -70,7 +82,7 @@ public class MouseChooseTerminal : MonoBehaviour
     private void OnMouseDown()
     {
 
-        if ((Player.position - transform.position).magnitude < distanceGrab && terminalProvider.isWin == false) 
+        if ((Player.position - transform.position).magnitude < distanceGrab && terminalProvider.isWin == false && canActivate) 
         {
             image.color = ImageColorNotActive;
             if (!isOpen)
@@ -84,6 +96,7 @@ public class MouseChooseTerminal : MonoBehaviour
 
     private void OpenNote()
     {
+
         isOpen= true;
         print("open terminal");
         Cursor.lockState = CursorLockMode.None;
