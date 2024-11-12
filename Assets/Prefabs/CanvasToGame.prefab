@@ -2181,6 +2181,10 @@ PrefabInstance:
       propertyPath: terminal
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6213386265108901405, guid: ceebf12d623f4424084dc69c924bb382, type: 3}
+      propertyPath: terminalProvider
+      value: 
+      objectReference: {fileID: 6929641624812719359}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

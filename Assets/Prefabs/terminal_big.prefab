@@ -215,8 +215,8 @@ GameObject:
   - component: {fileID: 3256854117175595648}
   - component: {fileID: 1470742294553196933}
   - component: {fileID: 3362569209584302246}
-  - component: {fileID: 4055183546657247535}
   - component: {fileID: 3648464667307722930}
+  - component: {fileID: 2421294834577859102}
   m_Layer: 0
   m_Name: terminal_big
   m_TagString: Untagged
@@ -232,7 +232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7232246537304329571}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -0.4, y: 0.237, z: -20.4}
   m_LocalScale: {x: 0.28, y: 0.5854632, z: 0.21281311}
   m_ConstrainProportionsScale: 1
@@ -240,7 +240,7 @@ Transform:
   - {fileID: 3880895505063927479}
   - {fileID: 1214071147701811666}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &3256854117175595648
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -314,33 +314,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.1567206, y: 1.9999998, z: 14.114376}
   m_Center: {x: 0.027394477, y: 0, z: 7.1366005}
---- !u!114 &4055183546657247535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7232246537304329571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49006a9bec658f8408c250de7dc55681, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  light: {fileID: 992918380650333093}
-  material: {fileID: 2100000, guid: dc8705afd4e593045b94e645d4689b62, type: 2}
-  intensityNotChoosen: 0.1
-  intensityChoosen: 0.3
-  distanceGrab: 3
-  ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
-  ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
-  image: {fileID: 0}
-  audioSource: {fileID: 3648464667307722930}
-  noteText: 
-  noteUI: {fileID: 0}
-  textUI: {fileID: 0}
-  animator: {fileID: 0}
-  isTerminal: 0
-  terminalDistance: 0
 --- !u!82 &3648464667307722930
 AudioSource:
   m_ObjectHideFlags: 0
@@ -351,8 +324,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2ee01fcef991c84b94ba2d636ece029, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 929a23596e5963244b6474823d9986c2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -437,3 +410,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2421294834577859102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232246537304329571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39d9472478ca1f4a9a295d95804475d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 992918380650333093}
+  material: {fileID: 2100000, guid: dc8705afd4e593045b94e645d4689b62, type: 2}
+  intensityNotChoosen: 0.1
+  intensityChoosen: 0.3
+  distanceGrab: 6
+  ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
+  ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
+  image: {fileID: 0}
+  audioSource: {fileID: 3648464667307722930}
+  noteUI: {fileID: 0}
+  animator: {fileID: 0}
+  terminalDistance: 6
+  isOpen: 0
+  terminalProvider: {fileID: 0}
