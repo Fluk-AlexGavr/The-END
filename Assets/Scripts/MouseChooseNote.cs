@@ -21,6 +21,13 @@ public class MouseChooseNote : MonoBehaviour
     [SerializeField] GameObject noteUI;
     [SerializeField] TMP_Text textUI;
     public Animator animator;
+    [SerializeField] MeshRenderer OutlineRender;
+
+    private void Awake()
+    {
+        material = new Material(material);
+        OutlineRender.material = material;
+    }
     public void PopUp()
     {
         animator.SetBool("pop", true);

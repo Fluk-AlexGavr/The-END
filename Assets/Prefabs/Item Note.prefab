@@ -312,8 +312,7 @@ MonoBehaviour:
   noteUI: {fileID: 0}
   textUI: {fileID: 0}
   animator: {fileID: 0}
-  isTerminal: 0
-  terminalDistance: 0
+  OutlineRender: {fileID: 8184381801157498156}
 --- !u!82 &4598344330914004564
 AudioSource:
   m_ObjectHideFlags: 0
