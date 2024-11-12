@@ -21,9 +21,6 @@ public class MouseChooseNote : MonoBehaviour
     [SerializeField] GameObject noteUI;
     [SerializeField] TMP_Text textUI;
     public Animator animator;
-
-    [SerializeField] bool isTerminal;
-    [SerializeField] float terminalDistance;
     public void PopUp()
     {
         animator.SetBool("pop", true);
@@ -31,27 +28,9 @@ public class MouseChooseNote : MonoBehaviour
 
     private void Update()
     {
-        if (animator.GetBool("pop") == true)
-        {
-            if (Input.GetKey(KeyCode.Q) && isTerminal)
-            {
-                noteUI.SetActive(false);
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-            if (isTerminal)
-            {
-                if ((Player.position - transform.position).magnitude >= terminalDistance)
-                {
-                    noteUI.SetActive(false);
-                    Cursor.lockState = CursorLockMode.Locked;
-                }
-            }
-            else
-            {
-                PopDown();
-            }
+        if (Input.GetKeyUp(KeyCode.Q)) { 
             
-
+            PopDown();
 
         }
     }
@@ -110,10 +89,6 @@ public class MouseChooseNote : MonoBehaviour
         audioSource.Play();
         noteUI.SetActive(true);
         textUI.text = noteText;
-        if(isTerminal)
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
         PopUp();
     }
 }
