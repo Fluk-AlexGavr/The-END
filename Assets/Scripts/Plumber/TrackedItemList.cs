@@ -6,22 +6,29 @@ using UnityEngine;
 public class TrackedItemList : MonoBehaviour
 {
     public List<GameObject> list;
+    [SerializeField]private PlumberManager plumberManager;
+    bool check = true;
 
     public void CheckCorrected()
     {
         int a = 0;
-        foreach(var item in list)
+        if (check)
         {
-            if (!item.GetComponent<Pipe>().isCorrect == true)
+            foreach (var item in list)
             {
-                a = 1;
+                if (!item.GetComponent<Pipe>().isCorrect == true)
+                {
+                    a = 1;
+                }
+            }
+
+            if (a == 0)
+            {
+                plumberManager.isWin = true;
+                check = false;
+                return;
             }
         }
-        if (a == 0)
-        {
-            return;
-        }
-
     }
     private void Update()
     {

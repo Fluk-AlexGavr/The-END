@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class MouseChooseNote : MonoBehaviour
+public class MouseChooseTerminal : MonoBehaviour
 {
     [SerializeField] Light light;
     [SerializeField] Material material;
@@ -17,54 +17,29 @@ public class MouseChooseNote : MonoBehaviour
     [SerializeField] Color ImageColorNotActive;
     [SerializeField] Image image;
     [SerializeField] AudioSource audioSource;
-    [SerializeField] string noteText;
     [SerializeField] GameObject noteUI;
-    [SerializeField] TMP_Text textUI;
     public Animator animator;
-
-    [SerializeField] bool isTerminal;
     [SerializeField] float terminalDistance;
+    public bool isOpen=false;
+    public TerminalProvider terminalProvider;
     public void PopUp()
     {
-        animator.SetBool("pop", true);
+        animator.SetTrigger("Pop");
     }
 
     private void Update()
     {
-        if (animator.GetBool("pop") == true)
-        {
-            if (Input.GetKey(KeyCode.Q) && isTerminal)
-            {
-                noteUI.SetActive(false);
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-            if (isTerminal)
-            {
-                if ((Player.position - transform.position).magnitude >= terminalDistance)
+        if ((Player.position - transform.position).magnitude >= terminalDistance)
                 {
                     noteUI.SetActive(false);
-                    Cursor.lockState = CursorLockMode.Locked;
-                }
-            }
-            else
-            {
-                PopDown();
-            }
-            
-
-
         }
-    }
-    public void PopDown()
-    {
-        animator.SetBool("pop", false);
+
     }
 
 
     private void Start()
     {
         Player = GameObject.FindWithTag("Player").transform;
-        ChangeWeaponScript = Player.GetComponent<ChangeWeapon>();
         image.color = ImageColorNotActive;
         material.SetFloat("_Outline_Range", 0.05f);
     }
@@ -94,12 +69,14 @@ public class MouseChooseNote : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if ((Player.position - transform.position).magnitude < distanceGrab)
+
+        if ((Player.position - transform.position).magnitude < distanceGrab && terminalProvider.isWin == false) 
         {
             image.color = ImageColorNotActive;
-            if (!noteUI.activeInHierarchy) 
+            if (!isOpen)
             {
-            OpenNote();
+                print(terminalProvider.isWin);
+                OpenNote();
             }
             
         }
@@ -107,13 +84,12 @@ public class MouseChooseNote : MonoBehaviour
 
     private void OpenNote()
     {
-        audioSource.Play();
+        isOpen= true;
+        print("open terminal");
+        Cursor.lockState = CursorLockMode.None;
+        Player.GetComponent<FirstPersonMovement>().enabled = false;
+        Player.GetComponent<PlayerFootstepSounds>().enabled = false;
         noteUI.SetActive(true);
-        textUI.text = noteText;
-        if(isTerminal)
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
         PopUp();
     }
 }
