@@ -10,7 +10,18 @@ public class KeyPadGame : MonoBehaviour
     [SerializeField] AudioSource audio;
     [SerializeField] AudioSource win;
     [SerializeField] AudioSource loose;
+    [SerializeField] GameObject Player;
+    [SerializeField] MouseChooseTerminal terminal;
+    public bool isWin = false;
     private int buffer;
+    public TerminalProvider terminalProvider;
+    public void TurnMovement()
+    {
+        Player.GetComponent<FirstPersonMovement>().enabled = true;
+        Player.GetComponent<PlayerFootstepSounds>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        terminal.isOpen = false;
+    }
     public void clicked(GameObject obj)
     {
         if (keysLeft != 0)
@@ -42,12 +53,17 @@ public class KeyPadGame : MonoBehaviour
             {
                 gameObject.GetComponent<Animator>().SetTrigger("True");
                 win.Play();
-            }
+                isWin = true;
+                terminalProvider.isWin = true;
+}
             else
             {
                 gameObject.GetComponent<Animator>().SetTrigger("Wrong");
                 loose.Play();
             }
+            keysLeft = buffer;
+        }
+        if (gameObject.GetComponent<Animator>().GetBool("Exit")){
             keysLeft = buffer;
         }
 

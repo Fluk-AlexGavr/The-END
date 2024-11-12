@@ -19,6 +19,10 @@ public class Pipe : MonoBehaviour
         if (this.gameObject.transform.rotation.z == 0) { stats = 0; }
         else { stats += 1; }
         currentstate = stats;
+        if (!trackedItems.list.Contains(this.gameObject))
+        {
+            gameObject.GetComponent<Rigidbody2D>().gravityScale = 20;
+        }
     }
     private void Update()
     {
@@ -44,6 +48,4 @@ public class Pipe : MonoBehaviour
     {
         Shine.SetActive (false);
     }
-
-
 }
