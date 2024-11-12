@@ -11,11 +11,15 @@ public class MouseChooseButton: MonoBehaviour
     Transform Player;
     [SerializeField] float distanceGrab; 
     [SerializeField] Color ImageColorActive;
+    [SerializeField] Color ImageColorActiveButNotAllowedAccess;
     [SerializeField] Color ImageColorNotActive;
     [SerializeField] Image image;
     [SerializeField] AudioSource audioSource;
     [SerializeField] Animator animator;
     [SerializeField] Shot ShotScript;
+    private bool accessAlowed;
+    [SerializeField] TerminalProvider terminalProvider;
+    
     public void PopUp()
     {
         animator.SetBool("pop", true);
@@ -26,6 +30,10 @@ public class MouseChooseButton: MonoBehaviour
         if (animator.GetBool("pop") == true)
         {
                     PopDown();
+        }
+        if(accessAlowed == false) 
+        {
+            accessAlowed = terminalProvider.isWin;
         }
     }
     public void PopDown()
@@ -47,9 +55,13 @@ public class MouseChooseButton: MonoBehaviour
     }
     private void OnMouseOver()
     {
-        if ((Player.position - transform.position).magnitude < distanceGrab)
+        if ((Player.position - transform.position).magnitude < distanceGrab && accessAlowed)
         {
             image.color = ImageColorActive;
+        }
+        else if((Player.position - transform.position).magnitude < distanceGrab)
+        {
+            image.color = ImageColorActiveButNotAllowedAccess;
         }
         else
         {
@@ -73,7 +85,10 @@ public class MouseChooseButton: MonoBehaviour
 
     private void ButtonClick()
     {
-        ShotScript.buttonClick = true;
+        if(accessAlowed)
+        {
+            ShotScript.buttonClick = true;
+        }
         audioSource.Play();
         animator.SetTrigger("Click");
         PopUp();

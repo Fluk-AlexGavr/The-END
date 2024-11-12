@@ -556,11 +556,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!108 &725064009 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4560218561079657909, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-  m_PrefabInstance: {fileID: 3725350174919186439}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &745895033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -977,16 +972,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1205981058505337488, guid: 89b642db0338b7144bb5ba3e1b32fa66, type: 3}
   m_PrefabInstance: {fileID: 5599251357327544488}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1228118196 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5212784023679313485, guid: 89b642db0338b7144bb5ba3e1b32fa66, type: 3}
-  m_PrefabInstance: {fileID: 5599251357327544488}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1228118198 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8721915529854999143, guid: 89b642db0338b7144bb5ba3e1b32fa66, type: 3}
-  m_PrefabInstance: {fileID: 5599251357327544488}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1297998949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6423254326658391483, guid: 607f5450f98fe2d48bb64cc7bb0cded9, type: 3}
@@ -1106,17 +1091,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f4851b99f7407149b65400c3cfb87ce, type: 3}
---- !u!114 &1577634462 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4478968456609255181, guid: 89b642db0338b7144bb5ba3e1b32fa66, type: 3}
-  m_PrefabInstance: {fileID: 5599251357327544488}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1673157211 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1294399391387896205, guid: 89b642db0338b7144bb5ba3e1b32fa66, type: 3}
@@ -2187,10 +2161,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1811549297}
     - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: light
-      value: 
-      objectReference: {fileID: 725064009}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
       propertyPath: noteUI
       value: 
       objectReference: {fileID: 1164070392}
@@ -2199,85 +2169,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1164070395}
     - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: material
-      value: 
-      objectReference: {fileID: 2100000, guid: bfc1ed9ed28f630489311f2c214c3916, type: 2}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: distanceGrab
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: intensityChoosen
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: terminalDistance
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
       propertyPath: terminalProvider
       value: 
       objectReference: {fileID: 5599251357327544490}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: ImageColorActive.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: ImageColorActive.b
-      value: 0.13887742
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: ImageColorActive.g
-      value: 0.7075472
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: ImageColorActive.r
-      value: 0.13683695
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: intensityNotChoosen
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: ImageColorNotActive.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: ImageColorNotActive.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: ImageColorNotActive.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117199679696996211, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: ImageColorNotActive.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112070499684325124, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: image
-      value: 
-      objectReference: {fileID: 1811549297}
-    - target: {fileID: 4112070499684325124, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: noteUI
-      value: 
-      objectReference: {fileID: 1228118196}
-    - target: {fileID: 4112070499684325124, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: textUI
-      value: 
-      objectReference: {fileID: 1577634462}
-    - target: {fileID: 4112070499684325124, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1228118198}
-    - target: {fileID: 4112070499684325124, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: isTerminal
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112070499684325124, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
-      propertyPath: terminalDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6910230286340549394, guid: 3346148499cd5144cba62489b3e8c193, type: 3}
       propertyPath: m_Name
       value: terminal_mini

@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6910230286340549394}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 8.762, y: 2.207665, z: -20.49}
   m_LocalScale: {x: 0.04, y: 0.26717845, z: 0.5381096}
   m_ConstrainProportionsScale: 1
@@ -155,7 +155,7 @@ Transform:
   - {fileID: 3830627663360288209}
   - {fileID: 4112343056642337786}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &7853557374501173156
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -240,19 +240,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e39d9472478ca1f4a9a295d95804475d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 0}
-  material: {fileID: 0}
-  intensityNotChoosen: 0
-  intensityChoosen: 0
-  distanceGrab: 0
-  ImageColorActive: {r: 0, g: 0, b: 0, a: 0}
-  ImageColorNotActive: {r: 0, g: 0, b: 0, a: 0}
+  light: {fileID: 4560218561079657909}
+  material: {fileID: 2100000, guid: bfc1ed9ed28f630489311f2c214c3916, type: 2}
+  intensityNotChoosen: 0.1
+  intensityChoosen: 0.3
+  distanceGrab: 3
+  ImageColorActive: {r: 0.13683695, g: 0.7075472, b: 0.13887742, a: 1}
+  ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
   image: {fileID: 0}
   audioSource: {fileID: 6524119342834231998}
   noteUI: {fileID: 0}
   animator: {fileID: 0}
-  isTerminal: 0
-  terminalDistance: 0
+  terminalDistance: 3
+  isOpen: 0
+  terminalProvider: {fileID: 0}
 --- !u!82 &6524119342834231998
 AudioSource:
   m_ObjectHideFlags: 0

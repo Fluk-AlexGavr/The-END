@@ -13,6 +13,7 @@ public class Shot : MonoBehaviour
     [SerializeField] float explosionDelay;
     [SerializeField] ParticleSystem explosion;
     [SerializeField] AudioSource AudioSource;
+    [SerializeField] GameObject door;
 
     public bool buttonClick;
 
@@ -95,5 +96,6 @@ public class Shot : MonoBehaviour
     void SetExplosion()
     {
         explosion.Play();
+        door.SetActive(false );
     }
 }
