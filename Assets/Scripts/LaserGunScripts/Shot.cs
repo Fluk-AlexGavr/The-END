@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Shot : MonoBehaviour
 {
@@ -97,5 +98,11 @@ public class Shot : MonoBehaviour
     {
         explosion.Play();
         door.SetActive(false );
+        Invoke("SetCutScene", 2f);
+    }
+
+    void SetCutScene()
+    {
+        SceneManager.LoadScene(2);
     }
 }
