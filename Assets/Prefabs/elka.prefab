@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3945124567956587230}
-  - component: {fileID: 644556814462783259}
+  - component: {fileID: 4061205492087984152}
+  - component: {fileID: 2467673071481249784}
   m_Layer: 0
   m_Name: elka
   m_TagString: Untagged
@@ -33,8 +34,8 @@ Transform:
   - {fileID: 452316967164792934}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &644556814462783259
-BoxCollider:
+--- !u!136 &4061205492087984152
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -51,9 +52,34 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.5, y: 0.5, z: 6}
-  m_Center: {x: 0, y: 0, z: 3}
+  serializedVersion: 2
+  m_Radius: 2.118425
+  m_Height: 4.2368503
+  m_Direction: 1
+  m_Center: {x: 0, y: -8.788424e-15, z: 1.6184307}
+--- !u!136 &2467673071481249784
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724188146166736233}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.8052592
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 4.65}
 --- !u!1 &3658547191810137917
 GameObject:
   m_ObjectHideFlags: 0

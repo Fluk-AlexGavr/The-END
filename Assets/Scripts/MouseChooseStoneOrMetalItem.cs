@@ -18,7 +18,7 @@ public class MouseChooseStoneOrMetalItem : MonoBehaviour
 
     List<GameObject> distuctiveObjs = new List<GameObject>();
     int countConnects;
-    [SerializeField] bool brokeNow;
+    public bool brokeNow;
     [SerializeField] bool needToBrokeFromCollider;
     GameObject StickWallController;
 

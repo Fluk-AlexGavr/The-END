@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -17.6027, y: 0.25, z: -15.503647}
-  m_LocalScale: {x: 0.63, y: 0.6149722, z: 1.0221597}
+  m_LocalScale: {x: 1.26, y: 1.2299443, z: 2.0443194}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3500231041135258174}
@@ -1136,7 +1136,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 40
+        scalar: 20
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -5045,7 +5045,7 @@ ParticleSystemRenderer:
   m_UseCustomTrailVertexStreams: 0
   m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: -2124705421725058983, guid: 59e1b83502846ee4fbef5891d2397c17, type: 3}
-  m_Mesh1: {fileID: 0}
+  m_Mesh1: {fileID: -5495902117074765545, guid: 6ff6c68b95a20ee4ebd1da5cbf76226d, type: 3}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MeshWeighting: 1

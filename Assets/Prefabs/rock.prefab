@@ -980,7 +980,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 40
+        scalar: 25
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -4889,7 +4889,7 @@ ParticleSystemRenderer:
   m_UseCustomTrailVertexStreams: 0
   m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: -2124705421725058983, guid: 59e1b83502846ee4fbef5891d2397c17, type: 3}
-  m_Mesh1: {fileID: 0}
+  m_Mesh1: {fileID: -5495902117074765545, guid: 6ff6c68b95a20ee4ebd1da5cbf76226d, type: 3}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MeshWeighting: 1
@@ -4926,14 +4926,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7951888669420884047}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -16.627396, y: 0.32473686, z: -22.566875}
-  m_LocalScale: {x: 0.61634207, y: 1, z: 1}
+  m_LocalScale: {x: 1.2326843, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3214582685399448860}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &7541530768816818293
 MeshFilter:
   m_ObjectHideFlags: 0

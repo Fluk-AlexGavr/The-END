@@ -149,7 +149,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 8.762, y: 2.207665, z: -20.49}
-  m_LocalScale: {x: 0.019999998, y: 0.13358921, z: 0.26905477}
+  m_LocalScale: {x: 0.04, y: 0.26717845, z: 0.5381096}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3830627663360288209}
@@ -253,6 +253,8 @@ MonoBehaviour:
   noteUI: {fileID: 0}
   textUI: {fileID: 0}
   animator: {fileID: 0}
+  isTerminal: 0
+  terminalDistance: 0
 --- !u!82 &6524119342834231998
 AudioSource:
   m_ObjectHideFlags: 0
