@@ -203,42 +203,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6c2c7ff385c39d43b9626067747ac99, type: 3}
---- !u!1 &108860951 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7232246537304329571, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
+--- !u!114 &108860952 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2421294834577859102, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
   m_PrefabInstance: {fileID: 7295358084447291129}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &108860952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108860951}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e39d9472478ca1f4a9a295d95804475d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 174117893}
-  material: {fileID: 2100000, guid: dc8705afd4e593045b94e645d4689b62, type: 2}
-  intensityNotChoosen: 0.1
-  intensityChoosen: 0.3
-  distanceGrab: 6
-  ImageColorActive: {r: 0, g: 1, b: 0.3177228, a: 1}
-  ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
-  image: {fileID: 1811549297}
-  audioSource: {fileID: 108860953}
-  noteUI: {fileID: 35668823}
-  animator: {fileID: 35668826}
-  terminalDistance: 6
-  isOpen: 0
-  terminalProvider: {fileID: 5599251357327544489}
---- !u!82 &108860953 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3648464667307722930, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-  m_PrefabInstance: {fileID: 7295358084447291129}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &144575395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,11 +271,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab83c5a75baa75b4782b473082b81f78, type: 3}
---- !u!108 &174117893 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 992918380650333093, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-  m_PrefabInstance: {fileID: 7295358084447291129}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &328854590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2737,10 +2707,6 @@ PrefabInstance:
       propertyPath: terminal
       value: 
       objectReference: {fileID: 1909782025}
-    - target: {fileID: 1138041701693073407, guid: 89b642db0338b7144bb5ba3e1b32fa66, type: 3}
-      propertyPath: terminalProvider
-      value: 
-      objectReference: {fileID: 5599251357327544490}
     - target: {fileID: 2285398236399194765, guid: 89b642db0338b7144bb5ba3e1b32fa66, type: 3}
       propertyPath: m_Name
       value: CanvasToGame
@@ -2963,62 +2929,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
+    - target: {fileID: 2421294834577859102, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
       propertyPath: image
       value: 
       objectReference: {fileID: 1811549297}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
+    - target: {fileID: 2421294834577859102, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
       propertyPath: noteUI
       value: 
       objectReference: {fileID: 35668823}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
+    - target: {fileID: 2421294834577859102, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 35668826}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
+    - target: {fileID: 2421294834577859102, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
       propertyPath: terminalProvider
       value: 
       objectReference: {fileID: 5599251357327544489}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: ImageColorActive.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: ImageColorActive.b
-      value: 0.11196155
-      objectReference: {fileID: 0}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: ImageColorActive.g
-      value: 0.6415094
-      objectReference: {fileID: 0}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: ImageColorActive.r
-      value: 0.18493083
-      objectReference: {fileID: 0}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: ImageColorNotActive.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: ImageColorNotActive.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: ImageColorNotActive.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 44199674431783180, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: ImageColorNotActive.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648464667307722930, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 929a23596e5963244b6474823d9986c2, type: 3}
-    - target: {fileID: 3648464667307722930, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5744083515964089351, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.4
@@ -3063,14 +2989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: terminal_big
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4055183546657247535, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7232246537304329571, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 108860952}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82f1ea615e267664e89aa604d174344d, type: 3}
 --- !u!1001 &7615416327024600896
 PrefabInstance:
