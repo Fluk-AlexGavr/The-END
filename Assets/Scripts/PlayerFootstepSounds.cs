@@ -8,12 +8,13 @@ public class PlayerFootstepSounds : MonoBehaviour
     public float StepsInterval = 1f;  // Cooldown between footsteps
     float distToGround = 1f;  // Distance to the ground (used for the raycast)
     private bool isFootstepPlaying = false;  // Flag to check if footstep sound is already playing
+    [SerializeField] float GroundCheck;
 
     private void Update()
     {
         if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && !isFootstepPlaying)
         {
-            if (Physics.Raycast(transform.position, Vector3.down, distToGround + 0.1f))
+            if (Physics.Raycast(transform.position, Vector3.down, distToGround + GroundCheck))
             {
                 StartCoroutine(PlaySounds());
             }

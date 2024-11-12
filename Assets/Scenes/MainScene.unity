@@ -74404,6 +74404,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6682376792936395547, guid: 607f5450f98fe2d48bb64cc7bb0cded9, type: 3}
+      propertyPath: GroundCheck
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7449264020485837779, guid: 607f5450f98fe2d48bb64cc7bb0cded9, type: 3}
       propertyPath: m_Enabled
       value: 0
