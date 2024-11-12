@@ -5044,7 +5044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9581986f74dd5242b157ada8a8c7fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceGrab: 3
+  distanceGrab: 6
   ImageColorActive: {r: 1, g: 0.821591, b: 0, a: 1}
   ImageColorActiveButNotUsed: {r: 1, g: 0.17034112, b: 0, a: 1}
   ImageColorNotActive: {r: 1, g: 1, b: 1, a: 1}
